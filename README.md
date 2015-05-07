@@ -6,7 +6,14 @@ Using the Script:
 - The script calls 2 different flat files during operation:
 -   1.)  A device list - List all the devices involved in the change; one per line, with no white space at the top, or trailing
 -       a.) Required when running script in 'Multiple Device' mode.
+-       b.) *This iteration assumes use on the HPNA platform (v9.2.2 tested); a successful SSH connection (via SecureCRT) is required prior to executing the script.
 -   2.)  A command list - List all the 'show' commands required, in the exact CLI syntax; one per line.
 -   For each device listed, the command list is executed in a top-down, line-by-line fashion.
 - As the command list is completed for each device on the device list, a file containing the command outputs is generated, with a filename in the following format: PRE/POST_TEST_devicename.txt
 - If script is executed in with the 'POST' option, a dialogue box to perform a differential function will pop-up after the last POST test file is generated.  If the function is performed, files will be created with the following filename format: 'DIFF_devicename.txt'.
+
+
+**A road-map is underway for increased functionality and application/platform flexibility.  Be sure to check back periodically for updates. 
+***Feature requests, as well as functionality feedback is welcomed!
+
+**** Although the code has been tested, the code is delivered as is, with no guarantees.****
